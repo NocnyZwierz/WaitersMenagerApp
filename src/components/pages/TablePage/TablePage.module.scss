@@ -1,0 +1,20 @@
+.root {
+    width: 500px;
+    
+    .status, .people, .bill {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+
+        input {
+            width: 50%; // Ustaw szerokość na 50% kontenera
+            max-width: 60px;
+            margin:0 20px 0 20px;
+        }
+        select {
+            margin-left: 20px;
+            width: 150px; // Ustaw szerokość na 50% kontenera
+            max-width: 200px; // Maksymalna szerokość w pikselach
+        }
+    }
+}

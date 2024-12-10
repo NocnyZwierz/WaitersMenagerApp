@@ -5,10 +5,15 @@ import NotFound from "./components/pages/NotFound/NotFound";
 import { Container } from "react-bootstrap";
 import Header from "./components/views/Header/Header";
 import Footer from "./components/views/Footer/Footer";
+import { useDispatch } from "react-redux";
+import { fetchTables } from "./redux/tablesRedux";
+import { useEffect } from "react";
 
 
 const App = () => {
-  console.log('chuj dupsa');
+  const dispatch = useDispatch();
+  useEffect(() => dispatch(fetchTables()), [dispatch]);
+
   return (
     <Container>
       <Header/>
